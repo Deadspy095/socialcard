@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    @font-face {
+      font-family: Inter-Variable;
+      src: url('/assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        width: 90%;
+        padding: 15px;
+      }
+
+      .jbtn button {
+        font-size: 12px;
+        padding: 8px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        width: 95%;
+        padding: 10px;
+      }
+
+      .name {
+        font-size: 18px;
+      }
+
+      .location,
+      .work {
+        font-size: 12px;
+      }
+
+      .jbtn button {
+        font-size: 10px;
+        padding: 6px;
+      }
+    }
+
+
+    .attribution {
+      width: 100vw;
+      height: 100vh;
+      background-color: hsl(0, 0%, 8%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    .card {
+      width: 90%;
+      max-width: 300px;
+      min-height: 63vh;
+      padding: 20px;
+      background-color: hsl(0, 0%, 12%);
+      position: relative;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+    }
+
+    .card_img {
+      display: flex;
+      justify-content: center;
+    }
+
+    .card img {
+
+      width: 20%;
+      height: 20%;
+      border-radius: 50%;
+    }
+
+    .name {
+      margin-top: 7%;
+      text-align: center;
+      color: hsl(0, 0%, 100%);
+      font-family: Inter-Variable;
+
+    }
+
+    .location {
+      margin-top: 2%;
+      text-align: center;
+      font-size: 10px;
+      color: hsl(75, 94%, 57%);
+      font-family: Inter-Variable;
+
+    }
+
+    .work {
+      margin-top: 10%;
+      text-align: center;
+      margin-bottom: 4%;
+      font-size: 11px;
+      color: hsl(0, 0%, 100%);
+      font-family: Inter-Variable;
+
+    }
+
+    .jbtn {
+      text-decoration: none;
+      text-align: center;
+
+    }
+
+    .jbtn button {
+      width: 100%;
+      max-width: 240px;
+      height: 35px;
+      padding: 10px;
+      margin: 7px;
+      font-size: 10px;
+      border-radius: 5px;
+      background-color: hsl(0, 0%, 20%);
+      color: hsl(0, 0%, 100%);
+      border: none;
+      cursor: pointer;
+      font-family: Inter-Variable;
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="attribution">
+    <div class="card">
+      <div class="card_img"><img src="/assets/images/avatar-jessica.jpeg" alt=""></div>
+      <h3 class="name">Jessica Randall</h3 >
+      <p class="location">London, United Kingdom</p>
+      <p class="work">"Front-end developer and avid reader."</p>
+      <div class="jbtn"><button> GitHub</button></div>
+      <div class="jbtn"><button>Frontend Mentor</button></div>
+      <div class="jbtn"><button>LinkedIn</button></div>
+      <div class="jbtn"><button>Twitter</button></div>
+      <div class="jbtn"><button>Instagram</button></div>
+
+    </div>
+
+</body>
+
+</html>
